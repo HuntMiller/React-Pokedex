@@ -1,0 +1,41 @@
+@import "../colors.scss";
+
+$headerHeight: 50px;
+
+header {
+  height: $headerHeight;
+  background: $pokedex-red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  box-shadow: 0 0 5px $pokedex-black;
+
+  & > a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    text-shadow: 0 0 5px $pokedex-black;
+
+    & > img {
+      width: 30px;
+      height: auto;
+    }
+  }
+
+  & > form {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+}
+
+.header-pad {
+  height: $headerHeight + 25px;
+}

@@ -1,0 +1,32 @@
+@import "../colors";
+
+.pokemon-info-container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  & h1 {
+    text-transform: capitalize;
+  }
+}
+
+.details-container {
+  display: flex;
+  flex-flow: wrap;
+  width: 100vw;
+  justify-content: center;
+}
+
+.detail-container {
+  width: 150px;
+  text-align: center;
+}
+
+.badge-container {
+  display: flex;
+  flex-direction: row;
+}

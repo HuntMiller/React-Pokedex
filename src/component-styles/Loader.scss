@@ -1,0 +1,28 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  & > img {
+    animation: 1s infinite linear pulse;
+
+    &:nth-child(2) {
+      animation-delay: 200ms;
+    }
+    &:nth-child(3) {
+      animation-delay: 400ms;
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}

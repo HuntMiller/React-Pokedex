@@ -1,0 +1,70 @@
+@import "../colors.scss";
+@import "../mixins.scss";
+
+.type- {
+  &badge {
+    border-radius: 2px;
+    color: white;
+    padding: 1px;
+    text-transform: uppercase;
+    font-family: "Stint Ultra Condensed", cursive;
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+    margin: 1px;
+  }
+  &normal {
+    @include badgetype($type-normal);
+  }
+  &fire {
+    @include badgetype($type-fire);
+  }
+  &water {
+    @include badgetype($type-water);
+  }
+  &electric {
+    @include badgetype($type-electric);
+  }
+  &grass {
+    @include badgetype($type-grass);
+  }
+  &ice {
+    @include badgetype($type-ice);
+  }
+  &fighting {
+    @include badgetype($type-fighting);
+  }
+  &poison {
+    @include badgetype($type-poison);
+  }
+  &ground {
+    @include badgetype($type-ground);
+  }
+  &flying {
+    @include badgetype($type-flying);
+  }
+  &psychic {
+    @include badgetype($type-psychic);
+  }
+  &bug {
+    @include badgetype($type-bug);
+  }
+  &rock {
+    @include badgetype($type-rock);
+  }
+  &ghost {
+    @include badgetype($type-ghost);
+  }
+  &dragon {
+    @include badgetype($type-dragon);
+  }
+  &dark {
+    @include badgetype($type-dark);
+  }
+  &steel {
+    @include badgetype($type-steel);
+  }
+  &fairy {
+    @include badgetype($type-fairy);
+  }
+}

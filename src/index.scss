@@ -1,0 +1,48 @@
+@import "colors";
+
+body {
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $pokedex-red;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $pokedex-black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lighten($pokedex-black, 10%);
+}
+
+.carousel .slide {
+  background: transparent !important;
+}
+
+.carousel .control-dots {
+  padding: 0;
+}
+
+.carousel .control-dots .dot {
+  background: $pokedex-red !important;
+}
+
+.carousel .carousel-status {
+  color: $pokedex-black !important;
+  text-transform: none;
+}
+
+.carousel .slide .legend {
+  background: $pokedex-black !important;
+  text-transform: capitalize;
+}

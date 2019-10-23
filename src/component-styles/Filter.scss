@@ -1,0 +1,13 @@
+@import "../colors.scss";
+
+.filter-form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.filter-input {
+  border: 1px solid $pokedex-black;
+  width: 100%;
+}
